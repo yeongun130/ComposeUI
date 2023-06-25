@@ -81,6 +81,7 @@ fun MyRowItem() {
 fun MyComposableView() {
     Log.d("TAG", "MyComposableView: ")
     val modifier = Modifier.padding(all = 10.dp)
+
     // LinearLayout Vertical
     Column(
         Modifier
