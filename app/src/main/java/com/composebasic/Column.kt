@@ -4,13 +4,18 @@ import android.annotation.SuppressLint
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
+import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
+import androidx.compose.foundation.shape.CircleShape
+import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.*
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.draw.clip
+import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
@@ -66,9 +71,41 @@ fun MyAppBar() {
 fun RandomUserListView(randomUsers: List<RandomUser>) {
     // 메모리 관리가 들어간 LazyColumn
     LazyColumn() {
-        items(randomUsers) { aRandomUser ->
-            Text(text = aRandomUser.name)
+        items(randomUsers) { RandomUserView(it) }
+    }
+}
+
+@Composable
+fun RandomUserView(randomUser: RandomUser) {
+    val typography = MaterialTheme.typography
+    Card(
+        modifier = Modifier
+            .padding(10.dp)
+            .fillMaxWidth(),
+        elevation = 10.dp,
+        shape = RoundedCornerShape(12.dp)
+    ) {
+        Row(modifier = Modifier.padding(10.dp),
+            verticalAlignment = Alignment.CenterVertically,
+            horizontalArrangement = Arrangement.spacedBy(20.dp)
+        ) {
+//            Box(
+//                modifier =
+//                Modifier
+//                    .size(width = 50.dp, height = 50.dp)
+//                    .clip(CircleShape)
+//                    .background(Color.Blue)
+//            )
+            androidx.compose.foundation.layout.Column() {
+                Text(text = randomUser.name,
+                    style = typography.subtitle1
+                )
+                Text(text = randomUser.description,
+                    style = typography.body1
+                )
+            }
         }
+
     }
 }
 
