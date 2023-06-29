@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">ComposeBasic</string>
     <string name="title_activity_lazy_column">LazyColumn</string>
+    <string name="title_activity_compose_uirow">ComposeUIRow</string>
 </resources>
