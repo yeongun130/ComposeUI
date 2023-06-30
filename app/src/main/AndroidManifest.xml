@@ -14,30 +14,31 @@
         android:theme="@style/Theme.ComposeBasic"
         tools:targetApi="31">
         <activity
-            android:name="com.composebasic.ComposeUIRow"
+            android:name=".ComposeUIColumn"
+            android:exported="false"
+            android:label="@string/title_activity_compose_uicolumn"
+            android:theme="@style/Theme.ComposeBasic" />
+        <activity
+            android:name=".ComposeUIRow"
             android:exported="true"
             android:label="@string/title_activity_compose_uirow"
-            android:theme="@style/Theme.ComposeBasic" >
+            android:theme="@style/Theme.ComposeBasic">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
         <activity
-            android:name="com.composebasic.ComposeUILazyColumn"
+            android:name=".ComposeUILazyColumn"
             android:exported="true"
             android:label="@string/title_activity_lazy_column"
-            android:theme="@style/Theme.ComposeBasic">
-        </activity>
-
+            android:theme="@style/Theme.ComposeBasic"></activity>
         <activity
-            android:name="com.composebasic.MainActivity"
+            android:name=".MainActivity"
             android:exported="true"
             android:label="@string/app_name"
-            android:theme="@style/Theme.ComposeBasic">
-        </activity>
+            android:theme="@style/Theme.ComposeBasic"></activity>
     </application>
 
 </manifest>
