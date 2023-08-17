@@ -36,23 +36,23 @@ class ComposeUIRow : ComponentActivity() {
     }
 }
 
-// arrangement 요소를 어떤식으로 배열할지
-/* arrangement는 Row, Column 같은 요소들이 들어가는
-   Container 성격의 @Composable에서 요소들의 아이템을 정렬 할 때 사용된다. */
+/* arrangement 요소를 어떤식으로 배열할지
+   arrangement는 Row, Column 같은 요소들이 들어가는
+   Container 성격의 @Composable에서 요소들의 아이템을 정렬 할 때 사용된다.
 
-// horizontal Arrangement 이니까 Start, End, Center 만 존재
-// Arrangement.SpaceBetween : 공간 모두 차지, 사이에 공간을 밀어넣기
-// Arrangement.Start : 왼쪽
-// Arrangement.End : 오른쪽
-// Arrangement.SpaceAround : 빈 공간을 남겨두기
-// Arrangement.Center : 요소들에 넣기
-// Arrangement.SpaceEvenly : 요소들 사이에 공간을 똑같이 하기
+   horizontal Arrangement 이니까 Start, End, Center 만 존재
+   Arrangement.SpaceBetween : 공간 모두 차지, 사이에 공간을 밀어넣기
+   Arrangement.Start : 왼쪽
+   Arrangement.End : 오른쪽
+   Arrangement.SpaceAround : 빈 공간을 남겨두기
+   Arrangement.Center : 요소들에 넣기
+   Arrangement.SpaceEvenly : 요소들 사이에 공간을 똑같이 하기
 
-// alignment
-// Alignment.Bottom : 컨테이너의 아래에 두기
-// Alignment.Top : 컨테이너의 위에 두기
-// 현재는 Row Composable 안에서 align이 들어가기 때문에 Center Vertically
-// Alignment.CenterVertically : 컨테이너의 수직방향으로 중앙에 두기
+   alignment
+   Alignment.Bottom : 컨테이너의 아래에 두기
+   Alignment.Top : 컨테이너의 위에 두기
+   현재는 Row Composable 안에서 align이 들어가기 때문에 Center Vertically
+   Alignment.CenterVertically : 컨테이너의 수직방향으로 중앙에 두기 */
 
 @Composable
 fun Container() {
