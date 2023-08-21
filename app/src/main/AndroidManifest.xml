@@ -14,17 +14,22 @@
         android:theme="@style/Theme.ComposeBasic"
         tools:targetApi="31">
         <activity
-            android:name=".ComposeUIBox"
+            android:name="com.composebasic.ComposeUIBoxWithConstraints"
+            android:exported="false"
+            android:label="@string/title_activity_compose_uibox_with_constraints"
+            android:theme="@style/Theme.ComposeBasic" />
+        <activity
+            android:name="com.composebasic.ComposeUIBox"
             android:exported="false"
             android:label="@string/title_activity_compose_uibox"
             android:theme="@style/Theme.ComposeBasic" />
         <activity
-            android:name=".ComposeUIColumn"
+            android:name="com.composebasic.ComposeUIColumn"
             android:exported="false"
             android:label="@string/title_activity_compose_uicolumn"
             android:theme="@style/Theme.ComposeBasic" />
         <activity
-            android:name=".ComposeUIRow"
+            android:name="com.composebasic.ComposeUIRow"
             android:exported="true"
             android:label="@string/title_activity_compose_uirow"
             android:theme="@style/Theme.ComposeBasic">
@@ -35,12 +40,12 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".ComposeUILazyColumn"
+            android:name="com.composebasic.ComposeUILazyColumn"
             android:exported="true"
             android:label="@string/title_activity_lazy_column"
             android:theme="@style/Theme.ComposeBasic" />
         <activity
-            android:name=".MainActivity"
+            android:name="com.composebasic.MainActivity"
             android:exported="true"
             android:label="@string/app_name"
             android:theme="@style/Theme.ComposeBasic" />
