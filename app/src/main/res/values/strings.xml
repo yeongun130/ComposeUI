@@ -6,4 +6,5 @@
     <string name="title_activity_compose_uibox">ComposeUIBox</string>
     <string name="title_activity_compose_uibox_with_constraints">ComposeUIBoxWithConstraints
     </string>
+    <string name="title_activity_compose_uitext">ComposeUIText</string>
 </resources>
