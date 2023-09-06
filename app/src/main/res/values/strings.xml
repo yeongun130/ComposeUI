@@ -9,4 +9,6 @@
     <string name="title_activity_compose_uitext">ComposeUIText</string>
     <string name="title_activity_compose_uicard">ComposeUICard</string>
     <string name="title_activity_compose_uibotton">ComposeUIBotton</string>
+    <string name="title_activity_compose_uifloating_action_button">ComposeUIFloatingActionButton
+    </string>
 </resources>
