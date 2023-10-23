@@ -11,4 +11,5 @@
     <string name="title_activity_compose_uibotton">ComposeUIBotton</string>
     <string name="title_activity_compose_uifloating_action_button">ComposeUIFloatingActionButton
     </string>
+    <string name="title_activity_compose_uichip">ComposeUIChip</string>
 </resources>
